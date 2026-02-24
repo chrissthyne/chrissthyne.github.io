@@ -6,95 +6,137 @@
 <title>Hoja de Vida</title>
 
 <style>
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 20px;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    color: #333;
 }
 
 .contenedor {
+    max-width: 1000px;
+    margin: 40px auto;
     background: white;
-    padding: 25px;
-    border-radius: 10px;
-    max-width: 900px;
-    margin: auto;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-h1 {
-    color: #2c3e50;
+header {
     text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+header p {
+    margin: 5px 0;
+    font-weight: 500;
+    color: #555;
+}
+
+section {
+    margin-bottom: 30px;
 }
 
 h2 {
-    color: #34495e;
-    border-bottom: 2px solid #34495e;
-    padding-bottom: 5px;
+    border-left: 6px solid #4e73df;
+    padding-left: 10px;
+    color: #4e73df;
 }
 
 p {
-    line-height: 1.6;
+    line-height: 1.7;
     text-align: justify;
 }
 
 ul {
+    padding-left: 20px;
     line-height: 1.6;
 }
-</style>
 
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+</style>
 </head>
 <body>
 
 <div class="contenedor">
 
-<h1>Vedia Sanches Ronald Cristian</h1>
-<p style="text-align:center;"><strong>Estudiante de Ingeniería en Sistemas</strong></p>
-<p style="text-align:center;">UNIVERSIDAD MAYOR REAL Y PONTIFICIA DE SN FRANCISCO XAVIER DE CHUQUISACA</p>
-<p style="text-align:center;">Primer semestre</p>
+<header>
+    <h1>Vedia Sanches Ronald Cristian</h1>
+    <p><strong>Estudiante de Ingeniería en Sistemas</strong></p>
+    <p>Universidad Mayor Real y Pontificia de San Francisco Xavier de Chuquisaca</p>
+    <p>Primer semestre</p>
+</header>
 
+<section>
 <h2>Perfil Profesional</h2>
 <p>
 Estudiante de primer semestre de Ingeniería en Sistemas con gran interés en el aprendizaje continuo y el desarrollo en el área tecnológica. Me caracterizo por ser una persona responsable, puntual y perfeccionista, comprometida con mis estudios y con el mejoramiento constante de mis habilidades académicas y personales.
 </p>
+</section>
 
+<section>
 <h2>Motivación para estudiar la carrera</h2>
-<p>
-Decidí estudiar Ingeniería en Sistemas porque siempre me ha interesado la tecnología y el impacto que tiene en nuestra vida diaria. Me llama la atención cómo funcionan las computadoras, los programas y las aplicaciones que utilizamos constantemente. Saber que detrás de cada sistema hay personas que lo diseñan y desarrollan despertó en mí el deseo de aprender más sobre este campo.
-</p>
 
-<p>
-Vivimos en una sociedad donde casi todo depende de la tecnología. La educación, los negocios y la comunicación funcionan gracias a sistemas informáticos. Por eso considero que esta carrera tiene un gran futuro y una gran importancia. Me motiva la idea de poder crear soluciones que ayuden a mejorar procesos y facilitar tareas.
-</p>
+<p>Decidí estudiar Ingeniería en Sistemas porque siempre me ha interesado la tecnología y el impacto que tiene en nuestra vida diaria. Me llama la atención cómo funcionan las computadoras, los programas y las aplicaciones que utilizamos constantemente.</p>
 
-<p>
-También elegí esta carrera porque me gustan los retos y aprender cosas nuevas. Aunque recién estoy en primer semestre, tengo el compromiso y la disposición de esforzarme para adquirir los conocimientos necesarios. Sé que el camino no será fácil, pero estoy preparada para asumirlo con responsabilidad.
-</p>
+<p>Vivimos en una sociedad donde casi todo depende de la tecnología. La educación, los negocios y la comunicación funcionan gracias a sistemas informáticos. Me motiva la idea de poder crear soluciones que ayuden a mejorar procesos y facilitar tareas.</p>
 
-<p>
-Me considero una persona responsable, puntual y perfeccionista, cualidades que considero importantes en esta profesión. Mi objetivo es formarme como una profesional competente y preparada para enfrentar los desafíos tecnológicos del futuro.
-</p>
+<p>Aunque recién estoy en primer semestre, tengo el compromiso y la disposición de esforzarme para adquirir los conocimientos necesarios. Estoy preparada para asumir este reto con responsabilidad y dedicación.</p>
 
+<p>Mi objetivo es formarme como una profesional competente y preparada para enfrentar los desafíos tecnológicos del futuro.</p>
+
+</section>
+
+<section>
 <h2>Formación Académica</h2>
 <ul>
-<li>Ingeniería en Sistemas – Universidad Mayor Real y Pontificia de San Francisco Xavier de Chuquisaca (2026 – Actualidad)</li>
+<li>Ingeniería en Sistemas (2026 – Actualidad)</li>
 <li>Bachiller en Humanidades (2025)</li>
 </ul>
+</section>
 
+<section>
 <h2>Habilidades Técnicas</h2>
 <ul>
 <li>Manejo básico de Microsoft Word</li>
 <li>Conocimientos iniciales en informática</li>
-<li>Interés en programación y desarrollo tecnológico</li>
+<li>Interés en programación</li>
 </ul>
+</section>
 
+<section>
 <h2>Habilidades Personales</h2>
 <ul>
 <li>Responsabilidad</li>
 <li>Puntualidad</li>
 <li>Perfeccionismo</li>
 <li>Compromiso académico</li>
-<li>Disposición para el aprendizaje</li>
 </ul>
+</section>
+
+<div class="footer">
+© 2026 - Hoja de Vida Personal
+</div>
 
 </div>
 
