@@ -8,97 +8,80 @@
 <style>
 body{
     margin:0;
-    font-family:'Segoe UI', sans-serif;
-    background:#f2f2f2;
+    font-family: 'Segoe UI', sans-serif;
+    background:#eaeaea;
 }
 
-.cv-container{
+.container{
+    display:flex;
     max-width:1000px;
     margin:40px auto;
-    background:white;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    box-shadow:0 5px 30px rgba(0,0,0,0.1);
 }
 
-.header{
-    display:flex;
-    align-items:center;
-    background:#e6e6e6;
-    padding:40px;
+/* COLUMNA IZQUIERDA */
+.sidebar{
+    width:35%;
+    background:#2b2b2b;
+    color:white;
+    padding:40px 25px;
 }
 
-.header img{
+.sidebar img{
     width:180px;
     height:220px;
     object-fit:cover;
-    margin-right:40px;
+    display:block;
+    margin:0 auto 20px auto;
+    border:3px solid white;
 }
 
-.header-text h1{
-    margin:0;
-    font-size:38px;
-    letter-spacing:2px;
+.sidebar h1{
+    text-align:center;
+    font-size:22px;
+    letter-spacing:1px;
 }
 
-.header-text h3{
-    margin-top:10px;
-    font-weight:normal;
-    color:#444;
-}
-
-.profile-bar{
-    background:#1f2a44;
-    color:white;
-    padding:30px 40px;
-}
-
-.profile-bar h2{
-    margin-top:0;
-}
-
-.content{
-    display:flex;
-}
-
-.left{
-    width:35%;
-    background:#f0f0f0;
-    padding:40px;
-}
-
-.left h2{
-    border-bottom:2px solid #ccc;
+.sidebar h2{
+    border-bottom:1px solid #777;
     padding-bottom:5px;
+    margin-top:30px;
+    font-size:16px;
+    text-transform:uppercase;
 }
 
-.left p, .left li{
+.sidebar p, .sidebar li{
     font-size:14px;
-    line-height:1.7;
+    line-height:1.6;
 }
 
-.left ul{
-    padding-left:20px;
+.sidebar ul{
+    padding-left:18px;
 }
 
-.right{
+/* COLUMNA DERECHA */
+.main{
     width:65%;
+    background:white;
     padding:40px;
 }
 
-.right h2{
-    border-left:5px solid #1f2a44;
+.main h2{
+    border-left:5px solid black;
     padding-left:10px;
     margin-top:30px;
+    text-transform:uppercase;
+    font-size:18px;
 }
 
-.right p{
-    line-height:1.95;  /* ligeramente más alto para asegurar líneas */
+.main p, .main li{
+    line-height:1.8;
     text-align:justify;
     margin-bottom:15px;
 }
 
-.right ul{
+.main ul{
     padding-left:20px;
-    line-height:1.8;
 }
 
 </style>
@@ -106,45 +89,33 @@ body{
 
 <body>
 
-<div class="cv-container">
+<div class="container">
 
-<div class="header">
-    <img src="tufoto.jpg" alt="Foto personal">
-    <div class="header-text">
-        <h1>TU NOMBRE COMPLETO</h1>
-        <h3>Estudiante de Ingeniería en Sistemas</h3>
-    </div>
-</div>
+<!-- COLUMNA GRIS -->
+<div class="sidebar">
 
-<div class="profile-bar">
-    <h2>PERFIL</h2>
-    <p>
-    Estudiante de primer semestre de Ingeniería en Sistemas en la Universidad Mayor Real y Pontificia de San Francisco Xavier de Chuquisaca.
-    Responsable, puntual y comprometida con el aprendizaje continuo y el desarrollo profesional.
-    </p>
-</div>
+<img src="tufoto.jpg" alt="Foto personal">
 
-<div class="content">
+<h1>TU NOMBRE COMPLETO</h1>
+<p style="text-align:center;">Estudiante de Ingeniería en Sistemas</p>
 
-<div class="left">
-
-<h2>CONTACTO</h2>
+<h2>Datos Personales</h2>
 <p><strong>Universidad:</strong><br>
 Universidad Mayor Real y Pontificia de San Francisco Xavier de Chuquisaca</p>
 
-<p><strong>Semestre:</strong><br>
-Primer semestre</p>
+<p><strong>Semestre:</strong><br>Primer semestre</p>
 
-<p><strong>Email:</strong><br>
-tuemail@gmail.com</p>
+<p><strong>Correo:</strong><br>tucorreo@gmail.com</p>
 
-<h2>IDIOMAS</h2>
+<p><strong>Teléfono:</strong><br>(opcional)</p>
+
+<h2>Idiomas</h2>
 <ul>
 <li>Español – Lengua materna</li>
 <li>Inglés – Nivel A2</li>
 </ul>
 
-<h2>HABILIDADES</h2>
+<h2>Habilidades</h2>
 <ul>
 <li>Responsabilidad</li>
 <li>Puntualidad</li>
@@ -157,69 +128,57 @@ tuemail@gmail.com</p>
 
 </div>
 
-<div class="right">
+<!-- COLUMNA BLANCA -->
+<div class="main">
 
-<h2>FORMACIÓN ACADÉMICA</h2>
-<p><strong>Ingeniería en Sistemas</strong><br>
-2026 – Actualidad</p>
+<h2>Formación Académica</h2>
+<ul>
+<li>Ingeniería en Sistemas – 2026 a la actualidad</li>
+<li>Bachiller en Humanidades – 2025</li>
+</ul>
 
-<p><strong>Bachiller en Humanidades</strong><br>
-Graduada en 2025</p>
-
-<h2>EXPERIENCIA PROFESIONAL</h2>
+<h2>Experiencia Profesional</h2>
 <p>
-Durante aproximadamente cinco años trabajé como ayudante en el área de construcción, apoyando en labores de electricidad y plomería.
-Realicé instalaciones eléctricas básicas domiciliarias, mantenimiento y trabajos generales de obra.
-Esta experiencia fortaleció mi disciplina, responsabilidad y capacidad de adaptación.
+Durante aproximadamente cinco años trabajé como ayudante en el área de construcción, 
+apoyando en labores de electricidad y plomería. Realicé instalaciones eléctricas básicas 
+domiciliarias, mantenimiento y apoyo en trabajos generales de obra. 
+Esta experiencia fortaleció mi responsabilidad, disciplina y capacidad de trabajo en equipo.
 </p>
 
-<h2>OTROS CURSOS Y SEMINARIOS</h2>
+<h2>Otros Cursos y Seminarios</h2>
 <p>
-Tengo interés en capacitarme en programación, desarrollo de software, análisis de datos e Inteligencia Artificial.
+Actualmente no he realizado cursos formales adicionales, pero tengo interés en 
+capacitarme en programación, desarrollo de software, inteligencia artificial y nuevas tecnologías.
 </p>
 
-<h2>MOTIVO POR EL CUAL ESCOGÍ LA CARRERA</h2>
+<h2>Motivo por el cual escogí la carrera</h2>
 
 <p>
-Escogí la carrera de Ingeniería en Sistemas porque considero que la tecnología es una de las áreas con mayor impacto en la sociedad actual.
-</p>
-
-<p>
-Los sistemas informáticos forman parte de la vida cotidiana y comprender su funcionamiento es fundamental para el desarrollo profesional en el contexto actual.
-</p>
-
-<p>
-Me interesa aprender cómo se diseñan y desarrollan programas, cómo se estructuran los sistemas y cómo se gestionan bases de datos.
+Escogí la carrera de Ingeniería en Sistemas porque considero que la tecnología es una de las áreas con mayor impacto en la sociedad actual. 
+Los sistemas informáticos forman parte de la vida cotidiana y comprender su funcionamiento es fundamental para el desarrollo profesional.
 </p>
 
 <p>
+Me interesa aprender cómo se diseñan y desarrollan programas, cómo se estructuran los sistemas y cómo se gestionan bases de datos. 
 También considero importante comprender la lógica de programación y los procesos que permiten que un software funcione de manera eficiente.
 </p>
 
 <p>
-Uno de los aspectos que más llama mi atención es el avance de la Inteligencia Artificial, ya que está transformando sectores como la educación, la salud y la industria.
+Uno de los aspectos que más llama mi atención es el avance de la Inteligencia Artificial (IA), ya que actualmente está transformando sectores como la educación, la salud y la industria. 
+La automatización y el análisis de datos representan herramientas clave para el futuro tecnológico.
 </p>
 
 <p>
-La automatización, el análisis de datos y el uso responsable de la tecnología representan elementos fundamentales para el desarrollo sostenible.
+La Ingeniería en Sistemas me permitirá adquirir conocimientos actualizados y adaptarme a las nuevas tendencias. 
+Además, ofrece áreas de especialización como desarrollo de software y análisis de datos.
 </p>
 
 <p>
-La Ingeniería en Sistemas me permitirá adquirir conocimientos actualizados y adaptarme a las nuevas tendencias del entorno digital.
+Mi experiencia laboral previa me ayudó a desarrollar disciplina y responsabilidad, pero decidí iniciar esta carrera con el objetivo de orientarme hacia un campo profesional relacionado con la tecnología y el aprendizaje constante. Considero que la formación universitaria me permitirá fortalecer mis Conocimientos teóricos y prácticos para enfrentar los desafíos del entorno digital actual!.
 </p>
 
-<p>
-Mi objetivo es fortalecer progresivamente mis competencias técnicas y participar en proyectos académicos que integren teoría y práctica.
-</p>
-
-<p>
-Asimismo, considero que esta carrera ofrece oportunidades de crecimiento profesional a largo plazo en un entorno tecnológico en constante evolución.
-</p>
-
-<h2>REFERENCIAS PERSONALES</h2>
+<h2>Referencias Personales</h2>
 <p>Disponibles a solicitud.</p>
-
-</div>
 
 </div>
 
