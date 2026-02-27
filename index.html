@@ -8,79 +8,102 @@
 <style>
 body{
     margin:0;
-    font-family: 'Segoe UI', sans-serif;
-    background:#eaeaea;
+    font-family:'Segoe UI', sans-serif;
+    background:#f2f2f2;
 }
 
-.container{
-    display:flex;
+/* CONTENEDOR PRINCIPAL */
+.cv-container{
     max-width:1000px;
     margin:40px auto;
-    box-shadow:0 5px 30px rgba(0,0,0,0.1);
+    background:white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* COLUMNA IZQUIERDA */
-.sidebar{
-    width:35%;
-    background:#2b2b2b;
-    color:white;
-    padding:40px 25px;
+/* CABECERA */
+.header{
+    display:flex;
+    align-items:center;
+    background:#e6e6e6;
+    padding:40px;
 }
 
-.sidebar img{
-    width:180px;
-    height:220px;
+.header img{
+    width:170px;
+    height:200px;
     object-fit:cover;
-    display:block;
-    margin:0 auto 20px auto;
-    border:3px solid white;
+    margin-right:40px;
 }
 
-.sidebar h1{
-    text-align:center;
-    font-size:22px;
+.header-text h1{
+    margin:0;
+    font-size:38px;
+    letter-spacing:2px;
+}
+
+.header-text h3{
+    margin-top:10px;
+    font-weight:normal;
+    color:#444;
     letter-spacing:1px;
 }
 
-.sidebar h2{
-    border-bottom:1px solid #777;
-    padding-bottom:5px;
-    margin-top:30px;
-    font-size:16px;
-    text-transform:uppercase;
+/* BARRA PERFIL */
+.profile-bar{
+    background:#1f2a44;
+    color:white;
+    padding:30px 40px;
 }
 
-.sidebar p, .sidebar li{
+.profile-bar h2{
+    margin-top:0;
+    letter-spacing:1px;
+}
+
+/* CONTENIDO */
+.content{
+    display:flex;
+}
+
+/* IZQUIERDA */
+.left{
+    width:35%;
+    background:#f0f0f0;
+    padding:40px;
+}
+
+.left h2{
+    border-bottom:2px solid #ccc;
+    padding-bottom:5px;
+}
+
+.left p, .left li{
     font-size:14px;
     line-height:1.6;
 }
 
-.sidebar ul{
-    padding-left:18px;
+.left ul{
+    padding-left:20px;
 }
 
-/* COLUMNA DERECHA */
-.main{
+/* DERECHA */
+.right{
     width:65%;
-    background:white;
     padding:40px;
 }
 
-.main h2{
-    border-left:5px solid black;
+.right h2{
+    border-left:5px solid #1f2a44;
     padding-left:10px;
-    margin-top:30px;
-    text-transform:uppercase;
-    font-size:18px;
 }
 
-.main p, .main li{
+.right p, .right li{
     line-height:1.8;
+    font-size:15px;
     text-align:justify;
-    margin-bottom:15px;
 }
 
-.main ul{
+.right ul{
     padding-left:20px;
 }
 
@@ -89,98 +112,110 @@ body{
 
 <body>
 
-<div class="container">
+<div class="cv-container">
 
-<!-- COLUMNA GRIS -->
-<div class="sidebar">
+    <!-- CABECERA -->
+    <div class="header">
+        <img src="tufoto.jpg" alt="Foto personal">
+        <div class="header-text">
+            <h1>TU NOMBRE COMPLETO</h1>
+            <h3>Estudiante de Ingeniería en Sistemas</h3>
+        </div>
+    </div>
 
-<img src="tufoto.jpg" alt="Foto personal">
+    <!-- PERFIL -->
+    <div class="profile-bar">
+        <h2>PERFIL</h2>
+        <p>
+        Estudiante de primer semestre de Ingeniería en Sistemas en la Universidad Mayor Real y Pontificia de San Francisco Xavier de Chuquisaca. 
+        Persona responsable, puntual y comprometida con el aprendizaje continuo. Interesada en el desarrollo de software, bases de datos e Inteligencia Artificial.
+        </p>
+    </div>
 
-<h1>TU NOMBRE COMPLETO</h1>
-<p style="text-align:center;">Estudiante de Ingeniería en Sistemas</p>
+    <!-- CONTENIDO -->
+    <div class="content">
 
-<h2>Datos Personales</h2>
-<p><strong>Universidad:</strong><br>
-Universidad Mayor Real y Pontificia de San Francisco Xavier de Chuquisaca</p>
+        <!-- COLUMNA IZQUIERDA -->
+        <div class="left">
 
-<p><strong>Semestre:</strong><br>Primer semestre</p>
+            <h2>CONTACTO</h2>
+            <p><strong>Universidad:</strong><br>
+            Universidad Mayor Real y Pontificia de San Francisco Xavier de Chuquisaca</p>
 
-<p><strong>Correo:</strong><br>tucorreo@gmail.com</p>
+            <p><strong>Semestre:</strong><br>
+            Primer semestre</p>
 
-<p><strong>Teléfono:</strong><br>(opcional)</p>
+            <p><strong>Email:</strong><br>
+            tuemail@gmail.com</p>
 
-<h2>Idiomas</h2>
-<ul>
-<li>Español – Lengua materna</li>
-<li>Inglés – Nivel A2</li>
-</ul>
+            <h2>IDIOMAS</h2>
+            <ul>
+                <li>Español – Lengua materna</li>
+                <li>Inglés – Nivel A2</li>
+            </ul>
 
-<h2>Habilidades</h2>
-<ul>
-<li>Responsabilidad</li>
-<li>Puntualidad</li>
-<li>Compromiso</li>
-<li>Perfeccionismo</li>
-<li>Trabajo en equipo</li>
-<li>Manejo básico de Microsoft Word</li>
-<li>Conocimientos básicos en informática</li>
-</ul>
+            <h2>HABILIDADES</h2>
+            <ul>
+                <li>Responsabilidad</li>
+                <li>Puntualidad</li>
+                <li>Compromiso</li>
+                <li>Perfeccionismo</li>
+                <li>Trabajo en equipo</li>
+                <li>Manejo básico de Microsoft Word</li>
+                <li>Conocimientos básicos en informática</li>
+            </ul>
 
-</div>
+        </div>
 
-<!-- COLUMNA BLANCA -->
-<div class="main">
+        <!-- COLUMNA DERECHA -->
+        <div class="right">
 
-<h2>Formación Académica</h2>
-<ul>
-<li>Ingeniería en Sistemas – 2026 a la actualidad</li>
-<li>Bachiller en Humanidades – 2025</li>
-</ul>
+            <h2>FORMACIÓN ACADÉMICA</h2>
+            <p><strong>Ingeniería en Sistemas</strong><br>
+            2026 – Actualidad</p>
 
-<h2>Experiencia Profesional</h2>
-<p>
-Durante aproximadamente cinco años trabajé como ayudante en el área de construcción, 
-apoyando en labores de electricidad y plomería. Realicé instalaciones eléctricas básicas 
-domiciliarias, mantenimiento y apoyo en trabajos generales de obra. 
-Esta experiencia fortaleció mi responsabilidad, disciplina y capacidad de trabajo en equipo.
-</p>
+            <p><strong>Bachiller en Humanidades</strong><br>
+            Graduada en 2025</p>
 
-<h2>Otros Cursos y Seminarios</h2>
-<p>
-Actualmente no he realizado cursos formales adicionales, pero tengo interés en 
-capacitarme en programación, desarrollo de software, inteligencia artificial y nuevas tecnologías.
-</p>
+            <h2>EXPERIENCIA PROFESIONAL</h2>
+            <p>
+            Durante aproximadamente cinco años trabajé como ayudante en el área de construcción, apoyando en labores de electricidad y plomería. 
+            Participé en instalaciones eléctricas básicas domiciliarias, mantenimiento y trabajos generales de obra. 
+            Esta experiencia fortaleció mi disciplina, responsabilidad y capacidad de trabajo en equipo.
+            </p>
 
-<h2>Motivo por el cual escogí la carrera</h2>
+            <h2>OTROS CURSOS Y SEMINARIOS</h2>
+            <p>
+            Actualmente no cuento con cursos adicionales formales, pero tengo interés en capacitarme en programación, desarrollo de software, análisis de datos e Inteligencia Artificial.
+            </p>
 
-<p>
-Escogí la carrera de Ingeniería en Sistemas porque considero que la tecnología es una de las áreas con mayor impacto en la sociedad actual. 
-Los sistemas informáticos forman parte de la vida cotidiana y comprender su funcionamiento es fundamental para el desarrollo profesional.
-</p>
+            <h2>MOTIVO POR EL CUAL ESCOGÍ LA CARRERA</h2>
+            <p>
+            Escogí la carrera de Ingeniería en Sistemas porque considero que la tecnología es una de las áreas con mayor impacto en la sociedad actual. 
+            Los sistemas informáticos forman parte de la vida cotidiana y comprender su funcionamiento es fundamental para el desarrollo profesional.
+            </p>
 
-<p>
-Me interesa aprender cómo se diseñan y desarrollan programas, cómo se estructuran los sistemas y cómo se gestionan bases de datos. 
-También considero importante comprender la lógica de programación y los procesos que permiten que un software funcione de manera eficiente.
-</p>
+            <p>
+            Me interesa aprender cómo se diseñan y desarrollan programas, cómo se estructuran los sistemas y cómo se gestionan bases de datos. 
+            También considero importante comprender la lógica de programación y los procesos que permiten que un software funcione de manera eficiente.
+            </p>
 
-<p>
-Uno de los aspectos que más llama mi atención es el avance de la Inteligencia Artificial (IA), ya que actualmente está transformando sectores como la educación, la salud y la industria. 
-La automatización y el análisis de datos representan herramientas clave para el futuro tecnológico.
-</p>
+            <p>
+            Uno de los aspectos que más llama mi atención es el avance de la Inteligencia Artificial, ya que está transformando sectores como la educación, la salud y la industria. 
+            La automatización y el análisis de datos representan herramientas clave para el futuro tecnológico.
+            </p>
 
-<p>
-La Ingeniería en Sistemas me permitirá adquirir conocimientos actualizados y adaptarme a las nuevas tendencias. 
-Además, ofrece áreas de especialización como desarrollo de software y análisis de datos.
-</p>
+            <p>
+            La Ingeniería en Sistemas me permitirá adquirir conocimientos actualizados y adaptarme a las nuevas tendencias. 
+            Aspiro a continuar capacitándome y participar en proyectos académicos que me permitan aplicar lo aprendido de manera práctica.
+            </p>
 
-<p>
-Mi experiencia laboral previa me ayudó a desarrollar disciplina y responsabilidad, pero decidí iniciar esta carrera con el objetivo de orientarme hacia un campo profesional relacionado con la tecnología y el aprendizaje constante. Considero que la formación universitaria me permitirá fortalecer mis Conocimientos teóricos y prácticos para enfrentar los desafíos del entorno digital actual!.
-</p>
+            <h2>REFERENCIAS PERSONALES</h2>
+            <p>Disponibles a solicitud.</p>
 
-<h2>Referencias Personales</h2>
-<p>Disponibles a solicitud.</p>
+        </div>
 
-</div>
+    </div>
 
 </div>
 
