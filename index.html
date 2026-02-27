@@ -3,139 +3,155 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hoja de Vida</title>
+<title>Curriculum Vitae</title>
 
 <style>
-
-body {
-    margin: 0;
+body{
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to right, #4e73df, #1cc88a);
-    color: #333;
+    background-color: #f2f2f2;
+    margin:0;
+    padding:0;
 }
 
-.contenedor {
-    max-width: 1000px;
-    margin: 40px auto;
+.container{
+    width: 85%;
+    max-width: 900px;
+    margin: 50px auto;
     background: white;
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
 }
 
-header {
+header{
     text-align: center;
-    margin-bottom: 40px;
+    border-bottom: 2px solid black;
+    padding-bottom: 25px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 32px;
-    color: #2c3e50;
+header img{
+    width:180px;
+    height:220px;
+    object-fit:cover;
+    border:2px solid black;
+    margin-bottom:15px;
 }
 
-header p {
-    margin: 5px 0;
-    font-weight: 500;
-    color: #555;
+h1{
+    margin:10px 0 5px 0;
+    font-size:28px;
+    letter-spacing:2px;
 }
 
-section {
-    margin-bottom: 30px;
+.subtitle{
+    font-size:16px;
+    color:#333;
 }
 
-h2 {
-    border-left: 6px solid #4e73df;
-    padding-left: 10px;
-    color: #4e73df;
+h2{
+    border-bottom:1px solid black;
+    padding-bottom:5px;
+    margin-top:30px;
+    font-size:17px;
+    text-transform: uppercase;
 }
 
-p {
-    line-height: 1.7;
+p{
+    line-height:1.6;
     text-align: justify;
 }
 
-ul {
-    padding-left: 20px;
-    line-height: 1.6;
+ul{
+    padding-left:20px;
+    line-height:1.6;
 }
 
-.footer {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 14px;
-    color: #777;
+.section{
+    margin-top:20px;
 }
 
-@media (max-width: 600px) {
-    .contenedor {
-        margin: 20px;
-        padding: 20px;
-    }
+strong{
+    color:black;
 }
-
 </style>
 </head>
+
 <body>
 
-<div class="contenedor">
+<div class="container">
 
 <header>
-    <h1>Vedia Sanches Ronald Cristian</h1>
-    <p><strong>Estudiante de Ingeniería en Sistemas</strong></p>
-    <p>Universidad Mayor Real y Pontificia de San Francisco Xavier de Chuquisaca</p>
-    <p>Primer semestre</p>
+    <img src="tufoto.jpg" alt="Foto personal">
+    <h1>TU NOMBRE COMPLETO</h1>
+    <p class="subtitle">Estudiante de Ingeniería en Sistemas</p>
 </header>
 
-<section>
-<h2>Perfil Profesional</h2>
-<p>
-Estudiante de primer semestre de Ingeniería en Sistemas con gran interés en el aprendizaje continuo y el desarrollo en el área tecnológica. Me caracterizo por ser una persona responsable, puntual y perfeccionista, comprometida con mis estudios y con el mejoramiento constante de mis habilidades académicas y personales.
-</p>
-</section>
+<div class="section">
+<h2>1. Datos Personales</h2>
+<p><strong>Universidad:</strong> Universidad Mayor Real y Pontificia de San Francisco Xavier de Chuquisaca</p>
+<p><strong>Semestre:</strong> Primer semestre</p>
+<p><strong>Correo:</strong> tucorreo@gmail.com</p>
+<p><strong>Teléfono:</strong> (opcional)</p>
+</div>
 
-<section>
-<h2>Motivación para estudiar la carrera</h2>
-
-<p>Decidí estudiar Ingeniería en Sistemas porque siempre me ha interesado la tecnología y el impacto que tiene en nuestra vida diaria. Me llama la atención cómo funcionan las computadoras, los programas y las aplicaciones que utilizamos constantemente.</p>
-
-<p>Vivimos en una sociedad donde casi todo depende de la tecnología. La educación, los negocios y la comunicación funcionan gracias a sistemas informáticos. Me motiva la idea de poder crear soluciones que ayuden a mejorar procesos y facilitar tareas.</p>
-
-<p>Aunque recién estoy en primer semestre, tengo el compromiso y la disposición de esforzarme para adquirir los conocimientos necesarios. Estoy preparada para asumir este reto con responsabilidad y dedicación.</p>
-
-<p>Mi objetivo es formarme como una profesional competente y preparada para enfrentar los desafíos tecnológicos del futuro.</p>
-
-</section>
-
-<section>
-<h2>Formación Académica</h2>
+<div class="section">
+<h2>2. Formación Académica</h2>
 <ul>
-<li>Ingeniería en Sistemas (2026 – Actualidad)</li>
-<li>Bachiller en Humanidades (2025)</li>
+<li>Ingeniería en Sistemas – 2026 a la actualidad</li>
+<li>Bachiller en Humanidades – 2025</li>
 </ul>
-</section>
+</div>
 
-<section>
-<h2>Habilidades Técnicas</h2>
+<div class="section">
+<h2>3. Idiomas</h2>
+<ul>
+<li>Español – Lengua materna</li>
+<li>Inglés – Nivel A2</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>4. Experiencia Profesional</h2>
+<p>
+Durante aproximadamente cinco años trabajé como ayudante en el área de construcción, 
+apoyando en labores de electricidad y plomería. Realicé instalaciones eléctricas básicas 
+domiciliarias, mantenimiento y apoyo en trabajos generales de obra. 
+Esta experiencia fortaleció mi responsabilidad, disciplina y trabajo en equipo.
+</p>
+</div>
+
+<div class="section">
+<h2>5. Otros Cursos y Seminarios</h2>
+<p>
+Actualmente no he realizado cursos formales adicionales, pero tengo interés en 
+capacitarme en programación, desarrollo de software y nuevas tecnologías.
+</p>
+</div>
+
+<div class="section">
+<h2>6. Habilidades o Competencias</h2>
 <ul>
 <li>Manejo básico de Microsoft Word</li>
-<li>Conocimientos iniciales en informática</li>
-<li>Interés en programación</li>
+<li>Conocimientos básicos en informática</li>
+<li>Experiencia en electricidad y plomería</li>
+<li>Responsabilidad y puntualidad</li>
+<li>Compromiso y perfeccionismo</li>
 </ul>
-</section>
+</div>
 
-<section>
-<h2>Habilidades Personales</h2>
-<ul>
-<li>Responsabilidad</li>
-<li>Puntualidad</li>
-<li>Perfeccionismo</li>
-<li>Compromiso académico</li>
-</ul>
-</section>
+<div class="section">
+<h2>7. Motivo por el cual escogí la carrera</h2>
+<p>
+Escogí Ingeniería en Sistemas porque siempre me ha llamado la atención la tecnología 
+y el funcionamiento de las computadoras. Después de trabajar varios años en construcción, 
+comprendí la importancia de superarme y buscar una profesión que me permita crecer 
+personal y profesionalmente. Deseo adquirir conocimientos que me permitan desarrollar 
+soluciones tecnológicas y construir un mejor futuro a través del aprendizaje constante.
+</p>
+</div>
 
-<div class="footer">
-© 2026 - Hoja de Vida Personal
+<div class="section">
+<h2>8. Referencias Personales</h2>
+<p>Disponibles a solicitud.</p>
 </div>
 
 </div>
