@@ -7,154 +7,36 @@
 
 <style>
 body{
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f2f2f2;
     margin:0;
-    padding:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:#eaeaea;
 }
 
 .container{
-    width: 85%;
-    max-width: 900px;
-    margin: 50px auto;
-    background: white;
-    padding: 40px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    display:flex;
+    max-width:1000px;
+    margin:40px auto;
+    box-shadow:0 5px 30px rgba(0,0,0,0.1);
 }
 
-header{
-    text-align: center;
-    border-bottom: 2px solid black;
-    padding-bottom: 25px;
+/* COLUMNA IZQUIERDA */
+.sidebar{
+    width:35%;
+    background:#2b2b2b;
+    color:white;
+    padding:40px 25px;
 }
 
-header img{
+.sidebar img{
     width:180px;
     height:220px;
     object-fit:cover;
-    border:2px solid black;
-    margin-bottom:15px;
+    display:block;
+    margin:0 auto 20px auto;
+    border:3px solid white;
 }
 
-h1{
-    margin:10px 0 5px 0;
-    font-size:28px;
-    letter-spacing:2px;
-}
-
-.subtitle{
-    font-size:16px;
-    color:#333;
-}
-
-h2{
-    border-bottom:1px solid black;
-    padding-bottom:5px;
-    margin-top:30px;
-    font-size:17px;
-    text-transform: uppercase;
-}
-
-p{
-    line-height:1.6;
-    text-align: justify;
-}
-
-ul{
-    padding-left:20px;
-    line-height:1.6;
-}
-
-.section{
-    margin-top:20px;
-}
-
-strong{
-    color:black;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-<header>
-    <img src="tufoto.jpg" alt="Foto personal">
-    <h1>TU NOMBRE COMPLETO</h1>
-    <p class="subtitle">Estudiante de Ingeniería en Sistemas</p>
-</header>
-
-<div class="section">
-<h2>1. Datos Personales</h2>
-<p><strong>Universidad:</strong> Universidad Mayor Real y Pontificia de San Francisco Xavier de Chuquisaca</p>
-<p><strong>Semestre:</strong> Primer semestre</p>
-<p><strong>Correo:</strong> tucorreo@gmail.com</p>
-<p><strong>Teléfono:</strong> (opcional)</p>
-</div>
-
-<div class="section">
-<h2>2. Formación Académica</h2>
-<ul>
-<li>Ingeniería en Sistemas – 2026 a la actualidad</li>
-<li>Bachiller en Humanidades – 2025</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>3. Idiomas</h2>
-<ul>
-<li>Español – Lengua materna</li>
-<li>Inglés – Nivel A2</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>4. Experiencia Profesional</h2>
-<p>
-Durante aproximadamente cinco años trabajé como ayudante en el área de construcción, 
-apoyando en labores de electricidad y plomería. Realicé instalaciones eléctricas básicas 
-domiciliarias, mantenimiento y apoyo en trabajos generales de obra. 
-Esta experiencia fortaleció mi responsabilidad, disciplina y trabajo en equipo.
-</p>
-</div>
-
-<div class="section">
-<h2>5. Otros Cursos y Seminarios</h2>
-<p>
-Actualmente no he realizado cursos formales adicionales, pero tengo interés en 
-capacitarme en programación, desarrollo de software y nuevas tecnologías.
-</p>
-</div>
-
-<div class="section">
-<h2>6. Habilidades o Competencias</h2>
-<ul>
-<li>Manejo básico de Microsoft Word</li>
-<li>Conocimientos básicos en informática</li>
-<li>Experiencia en electricidad y plomería</li>
-<li>Responsabilidad y puntualidad</li>
-<li>Compromiso y perfeccionismo</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>7. Motivo por el cual escogí la carrera</h2>
-<p>
-Escogí Ingeniería en Sistemas porque siempre me ha llamado la atención la tecnología 
-y el funcionamiento de las computadoras. Después de trabajar varios años en construcción, 
-comprendí la importancia de superarme y buscar una profesión que me permita crecer 
-personal y profesionalmente. Deseo adquirir conocimientos que me permitan desarrollar 
-soluciones tecnológicas y construir un mejor futuro a través del aprendizaje constante.
-</p>
-</div>
-
-<div class="section">
-<h2>8. Referencias Personales</h2>
-<p>Disponibles a solicitud.</p>
-</div>
-
-</div>
-
-</body>
-</html>
+.sidebar h1{
+    text-align:center;
+    font-size:22px;
+    letter-spacing
